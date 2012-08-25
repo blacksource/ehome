@@ -1,0 +1,104 @@
+/*common begin*/
+body{
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  background-color: #ffffff;
+}
+a{
+	text-decoration: none;
+}
+/*common end*/
+
+.header, .container{
+	width:980px;
+	margin: 0 auto;
+}
+
+.header{
+	height: 80px;
+}
+.nav-bar-top{
+	height: 41px;
+	font-size: 16px;
+	font-weight:bold;
+	color: white;
+	margin-top:8px;
+	background: url(/img/top-nav-bg.jpg) repeat-x;
+}
+.nav-bar-top li
+{
+	width:90px;
+	height: 40px;
+	line-height:40px;
+	background: url(/img/top-nav-sep.jpg) no-repeat;
+}
+.nav-bar-top .active
+{
+	background: url(/img/top-nav-active-bg.jpg) repeat-x;
+}
+.nav{
+	vertical-align: middle;
+}
+.nav li, .nav-v li{
+	text-align:center;
+	/*display: block;*/
+	list-style-type: none;
+}
+.nav li
+{
+	float: left;
+}
+.nav a{
+	color: white;
+}
+.ad
+{
+	height:400px;
+	margin-top: 10px;
+}
+.ad-l
+{
+	float: left;
+	width: 730px;
+}
+.ad-t
+{
+	border: 1px solid #E4E4E4;
+}
+.ad-b
+{
+	height: 30px;
+	margin-top: 0px;
+	font-size: 12px;
+	background-color: #DDDDDD;
+}
+.ad-b li{
+	width:136px;
+}
+.ad-r
+{
+	float: right;
+	width: 238px;
+}
+.min-bar
+{
+	border:1px solid #E4E4E4;
+	margin-bottom: 10px;
+}
+.nav-a
+{
+	margin-left: -20px;
+	display: block;
+	height: 300px;
+}
+.nav-a li
+{
+	float:left;
+ margin:2px 5px;
+ list-style:none;
+ display:block; 
+white-space: nowrap;
+}

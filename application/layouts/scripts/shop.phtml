@@ -7,7 +7,6 @@
     <meta name="Description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
     <link rel="shortcut icon" href="/images/favicon.ico">
-    <!-- <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"> -->
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <script type="text/javascript" src="/js/jquery-1.8.0.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="/js/main.js" charset="utf-8"></script>
@@ -17,9 +16,29 @@
     <div class="wrapper">
         <? echo $this->partial('_header.phtml'); ?>
         <? echo $this->partial('_nav.phtml'); ?>
-        <? echo $this->partial('_ad.phtml'); ?>
         <div class="container">
-            <?php echo $this->layout()->content; ?>
+            <? echo $this->partial('shop/_header.phtml'); ?>
+            <div style="float:left; border:1px solid #DDDDDD;width:200px;box-shadow:3px 2px 10px #BBB3C1;border-radius: 4px;margin-top:10px; ">
+                <? echo $this->partial('shop/_left.phtml'); ?>
+            </div>
+            <div class="shop-right" style="width:770;min-height:200px;height:auto;border:1px solid #DDDDDD;margin-left:220px;margin-top:10px;display:block;">
+                <? echo $this->partial('shop/_nav.phtml'); ?>
+                <div>
+                    <?php echo $this->layout()->content; ?>
+                </div>
+            </div>
+
+
+            <style type="text/css">
+            .shop-nav{
+                background-color: #DDDDDD;
+                height: 28px;
+            }
+            .shop-nav li a{
+                width:80px;
+                display: block;
+            }
+            </style>
         </div>
         <? echo $this->partial('_footer.phtml'); ?>
     </div>

@@ -102,7 +102,7 @@ img{
 }
 .nav-sub-detail-item dd a{
 	padding: 4px 8px;
-	color: #666;
+	color: #666!important;
 	display: block;
 	float: left;
 	_float: left;

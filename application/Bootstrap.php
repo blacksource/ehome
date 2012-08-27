@@ -14,6 +14,18 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
                   new Zend_Controller_Router_Route('/', 
                   					array('controller' => 'index',
                   							'action' => 'index')));
+
+		/*shop begin*/
+		$router->addRoute('shop', new Zend_Controller_Router_Route_Regex(
+			    'shop/(\d+)\.html',
+			    array(
+			        'controller' => 'shop',
+			        'action'     => 'index'
+			    ),
+			    array(1 => 'id'),
+			    '%s.html'
+			));
+		/*shop end*/
 	}
 
     protected function _initLayoutHelper()

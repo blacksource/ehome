@@ -295,7 +295,7 @@ img{
 	background-color:black;
 }
 
-.floor-bottom{
+.floor-bottom, .box-shadow{
 	height: 12px;
 	font-size: 0;
 	background: url(/img/banner-bottom.jpg) no-repeat;
@@ -343,3 +343,71 @@ ul.slidy-menu li.slidy-link-selected a {
 	color: #FFFBDE;
 	text-shadow: #444 1px 1px;
 }
+
+
+
+
+
+/***************shop start*********************/
+.shop-banner{
+	height:100px;
+	border:1px solid #DDDDDD;
+}
+.shop-left-box{
+	float:left; border:1px solid #DDDDDD;width:200px;box-shadow:3px 2px 10px #BBB3C1;border-radius: 4px;margin-top:10px; 
+}
+.shop-right-box{
+	width:770;min-height:200px;height:auto;border:1px solid #DDDDDD;margin-left:220px;margin-top:10px;display:block;
+}
+.shop-nav{
+    background-color: #DDDDDD;
+    height: 28px;
+}
+.shop-nav li a{
+    width:80px;
+    display: block;
+}
+.shop-info{
+	font-size: 12px;
+	margin:10px 0px 10px 0px;
+}
+.shop-info>h1{
+	margin:auto 0;
+}
+.shop-left-top{
+	background-color:#F2F2F2;height:25px;padding-left:10px;
+}
+.shop-left{
+	padding:10px;
+}
+.shop-brand{
+	margin:10px 0px 10px 0px;
+}
+.dot-line{
+	color: blue;border-style:dotted;margin:auto 0;
+}
+.products{
+	display: block;
+}
+.products li{
+	border:1px solid #DDDDDD;
+	width:230px;
+	height: 283px;
+	/*text-align: left;*/
+	margin:10px;
+	border-radius:0 0 3px 3px;
+	box-shadow:2px 3px 10px #BBB3C1;
+}
+.products li:hover{
+	border:1px solid #D67FB0;
+}
+.price{
+	color: red;
+}
+.products .pd-img{
+	height:260px;
+}
+.products .pd-desc{
+	background:#F2F2F2;
+}
+/***************shop end*********************/

@@ -11,14 +11,10 @@ class ShopController extends Zend_Controller_Action
 
 	public function indexAction()
 	{
-		try {
-			$shop = new Shop();
-			$shop->fetchAll()->toArray();
-			var_dump($shop);	
-		} catch (Exception $e) {
-			echo $e;
-		}
-		
+		// $shopId = $this->_request->getParam('id');
+		$shop = new Shop();
+		$shopModel = $shop->find(1)->toArray();
+		$this->view->shop =$shopModel[0];
 	}
 
 	public function introAction()

@@ -1,23 +1,27 @@
-<div style="background-color:#F2F2F2;height:25px;padding-left:10px;">商家信息</div>
-<div class="shop-left" style="padding:10px;">
-	<div class="shop-brand" style="margin:10px 0px 10px 0px;">
-		<img src="http://tenpp.com/JJ/JJCS_1_1_8.gif"?>
+<div class="shop-left-top">商家信息</div>
+<div class="shop-left">
+	<div class="shop-brand">
+		<img src="<?=$this->shop["Logo"]?>"/>
 	</div>
-	<hr size=1 style="color: blue;border-style:dotted;width:150;margin:auto 0;"> 
-	<div class="shop-info" style="margin:10px 0px 10px 0px;">
-		<h1 style="margin:auto 0;">江阴家居乐</h1>
+	<hr size=1 class="dot-line" style="width:150px;"> 
+	<div class="shop-info">
+		<h1><?=$this->shop["Name"]?></h1>
 		<table>
 			<tr>
-				<td style="width:40px;">电话：</td>
-				<td>0510-6888888<br/>18651005969</td>
+				<td style="width:40px;">手机：</td>
+				<td><?=$this->shop["MobilePhone"]?></td>
+			</tr>
+			<tr>
+				<td>电话：</td>
+				<td><?=$this->shop["TelPhone"]?></td>
 			</tr>
 			<tr>
 				<td>地址：</td>
-				<td>果园路28号新生活家居广场3楼A区15号</td>
+				<td><?=$this->shop["Address"]?></td>
 			</tr>
 			<tr>
 				<td>公交：</td>
-				<td>2路、1路</td>
+				<td><?=$this->shop["Bus"]?></td>
 			</tr>
 			<tr>
 				<td>客服：</td>
@@ -25,21 +29,21 @@
 			</tr>
 		</table>
 	</div>
-	<hr size=1 style="color: blue;border-style:dotted;width:150;margin:auto 0;"> 
-	<div style="margin:10px 0px 10px 0px;">
+	<hr size=1 class="dot-line" style="width:150px;"> 
+	<div class="shop-info">
 		<table>
 			<tr>
 				<td>店铺人气：</td>
-				<td>980</td>
+				<td><?=$this->shop["Views"]?></td>
 			</tr>
 			<tr>
 				<td>入驻时间：</td>
-				<td>2012年9月10日</td>
+				<td><?=$this->shop["CreatedAt"]?></td>
 			</tr>
 		</table>
 	</div>
-	<hr size=1 style="color: blue;border-style:dotted;width:150;margin:auto 0;"> 
-	<div style="margin:10px 0px 10px 0px;">
+	<hr size=1 class="dot-line" style="width:150px;"> 
+	<div class="shop-info">
 		<ul>
 			<li><a href="#">正品保障</a></li>
 			<li><a href="#">提供发票</a></li>

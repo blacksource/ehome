@@ -8,23 +8,23 @@
 		<h1><?=$this->shop["Name"]?></h1>
 		<table>
 			<tr>
-				<td style="width:40px;">手机：</td>
+				<td style="width:40px;"><label>手 机：</label></td>
 				<td><?=$this->shop["MobilePhone"]?></td>
 			</tr>
 			<tr>
-				<td>电话：</td>
+				<td><label>电 话：</label></td>
 				<td><?=$this->shop["TelPhone"]?></td>
 			</tr>
 			<tr>
-				<td>地址：</td>
+				<td><label>地 址：</label></td>
 				<td><?=$this->shop["Address"]?></td>
 			</tr>
 			<tr>
-				<td>公交：</td>
+				<td><label>公 交：</label></td>
 				<td><?=$this->shop["Bus"]?></td>
 			</tr>
 			<tr>
-				<td>客服：</td>
+				<td><label>客 服：</label></td>
 				<td></td>
 			</tr>
 		</table>
@@ -33,12 +33,12 @@
 	<div class="shop-info">
 		<table>
 			<tr>
-				<td>店铺人气：</td>
+				<td style="width:60px;">店铺人气：</td>
 				<td><?=$this->shop["Views"]?></td>
 			</tr>
 			<tr>
 				<td>入驻时间：</td>
-				<td><?=$this->shop["CreatedAt"]?></td>
+				<td><?=date("Y年m月d日",strtotime($this->shop["CreatedAt"]))?></td>
 			</tr>
 		</table>
 	</div>

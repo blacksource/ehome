@@ -1,7 +1,7 @@
 /*common begin*/
 body{
-  font:12px/1.5 arial;
-  font-size: 14px;
+  font:12px / 1.5 tahoma,arial,宋体b8b\4f53;
+  /*font-size: 14px;*/
   color: #333333;
   background-color: #FFFFFF;
 }
@@ -363,9 +363,16 @@ ul.slidy-menu li.slidy-link-selected a {
     background-color: #DDDDDD;
     height: 28px;
 }
+.shop-nav, .shop-nav li{
+	border-left: 1px solid #DDDDDD;
+}
 .shop-nav li a{
     width:80px;
+    line-height: 30px;
     display: block;
+}
+.shop-nav li a:hover, .shop-nav .selected{
+	background-color: white;
 }
 .shop-info{
 	font-size: 12px;
@@ -373,6 +380,9 @@ ul.slidy-menu li.slidy-link-selected a {
 }
 .shop-info>h1{
 	margin:auto 0;
+}
+.shop-info td{
+	vertical-align: top;
 }
 .shop-left-top{
 	background-color:#F2F2F2;height:25px;padding-left:10px;
@@ -385,6 +395,29 @@ ul.slidy-menu li.slidy-link-selected a {
 }
 .dot-line{
 	color: blue;border-style:dotted;margin:auto 0;
+}
+.shop-intro{
+	padding:5px 15px 15px 15px;
+	font-size: 14px;
+	box-shadow:2px 3px 10px #BBB3C1;
+}
+.shop-intro h1{
+	margin-bottom: 10px;
+	border-bottom: 2px solid #7B2705;
+}
+.shop-intro table{
+	width: 100%;
+	border-left:1px solid #DDDDDD;
+	border-top: 1px solid #DDDDDD;
+	border-radius: 3px; 
+	margin-top: 20px;
+}
+.shop-intro tr{
+	line-height: 36px;
+}
+.shop-intro td{
+	border-right: 1px solid #DDDDDD;
+	border-bottom:1px solid #DDDDDD;
 }
 .products{
 	display: block;

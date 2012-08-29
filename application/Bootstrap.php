@@ -40,7 +40,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 		    'shop/(\d+)\/products.html',
 		    array(
 		        'controller' => 'shop',
-		        'action'     => 'intro'
+		        'action'     => 'products'
 		    ),
 		    array(1 => 'id'),
 		    '%s.html'

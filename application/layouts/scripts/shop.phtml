@@ -14,18 +14,18 @@
 </head>
 <body>
     <div class="wrapper">
-        <?php echo $this->partial('_header.phtml'); ?>
-        <?php echo $this->partial('_nav.phtml'); ?>
+        <?= $this->partial('_header.phtml'); ?>
+        <?= $this->partial('_nav.phtml'); ?>
         <div class="container">
-            <?php echo $this->partial('shop/_header.phtml', array('shop'=>$this->shop)); ?>
+            <?= $this->partial('shop/_header.phtml', array('shop'=>$this->shop, 'actionName'=>$this->actionName)); ?>
             <div class="shop-left-box">
-                <?php echo $this->partial('shop/_left.phtml', array('shop'=>$this->shop)); ?>
+                <?= $this->partial('shop/_left.phtml', array('shop'=>$this->shop)); ?>
             </div>
             <div class="shop-right-box">
-                    <?php echo $this->layout()->content; ?>
+                <?= $this->layout()->content; ?>
             </div>
        </div>
-        <?php echo $this->partial('_footer.phtml'); ?>
+        <?= $this->partial('_footer.phtml'); ?>
     </div>
 </body>
 </head>

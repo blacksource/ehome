@@ -427,9 +427,15 @@ ul.slidy-menu li.slidy-link-selected a {
 	width:230px;
 	height: 283px;
 	/*text-align: left;*/
-	margin:10px;
+	margin:8px;
 	border-radius:0 0 3px 3px;
-	box-shadow:2px 3px 10px #BBB3C1;
+	/*box-shadow:2px 3px 10px #BBB3C1;*/
+
+	filter: progid:DXImageTransform.Microsoft.Shadow(color='#BBB3C1', Direction=145, Strength=3);  
+	/*width: 250px; height: 90px;  */
+	-webkit-box-shadow: 2px 2px 3px #BBB3C1; 
+	-moz-box-shadow: 2px 2px 3px #BBB3C1;
+	box-shadow: 2px 2px 3px #BBB3C1;
 }
 .products li:hover{
 	border:1px solid #D67FB0;

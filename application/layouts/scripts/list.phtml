@@ -17,11 +17,7 @@
         <?= $this->partial('_header.phtml'); ?>
         <?= $this->partial('_nav.phtml'); ?>
         <div class="container">
-            <?= $this->partial('shop/_header.phtml', array('shop'=>$this->shop, 'actionName'=>$this->actionName)); ?>
-            <div class="shop-left-box">
-                <?= $this->partial('shop/_left.phtml', array('shop'=>$this->shop, 'badges'=>$this->badges)); ?>
-            </div>
-            <div class="shop-right-box">
+            <div>
                 <?= $this->layout()->content; ?>
             </div>
        </div>

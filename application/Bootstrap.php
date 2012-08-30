@@ -46,6 +46,18 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 		    '%s.html'
 		));
 		/*shop end*/
+
+		/*list start*/
+		$router->addRoute('channel', new Zend_Controller_Router_Route_Regex(
+		    'channel/(lady|man).html',
+		    array(
+		        'controller' => 'channel',
+		        'action'     => 'index'
+		    ),
+		    array(1 => 'name'),
+		    '%s.html'
+		));
+		/*list end*/
 	}
 
     protected function _initLayoutHelper()

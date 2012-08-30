@@ -44,10 +44,10 @@
 	</div>
 	<hr size=1 class="dot-line" style="width:150px;"> 
 	<div class="shop-info">
-		<ul>
-			<li><a href="#">正品保障</a></li>
-			<li><a href="#">提供发票</a></li>
-			<li id="J_7day" class="last"><a href="#">七天退换</a></li>
-			</ul>
+		<ul class="nav">
+			<? foreach ($this->badges as $badge) {?>
+				<li><a href="#"><img src="<?=$badge['PicUrl']?>" style="width:60px;height:60px;" alt="<?=$badge['Name']?>"/></a></li>
+			<?}?>
+		</ul>
 	</div>
 </div>

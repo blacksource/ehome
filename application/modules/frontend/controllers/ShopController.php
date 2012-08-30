@@ -2,6 +2,7 @@
 
 require_once APPLICATION_PATH.'/models/Shop.php';
 require_once APPLICATION_PATH.'/models/Item.php';
+require_once APPLICATION_PATH.'/models/ShopBadge.php';
 
 class ShopController extends Zend_Controller_Action
 {
@@ -18,6 +19,9 @@ class ShopController extends Zend_Controller_Action
 		$item = new Item();
 		$this->view->items = $item->getByShopId($shopId);
 		$this->view->actionName = $this->_request->getActionName();
+
+		$shopBadge = new ShopBadge();
+		$this->view->badges = $shopBadge->getByShopId($shopId);
 	}
 
 	public function introAction()

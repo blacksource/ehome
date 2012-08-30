@@ -1,0 +1,17 @@
+<ul class="products nav">
+	<? foreach ($this->items as $item) {?>
+	<li>
+		<div calss="pd-img">
+			<div>
+				<a href="#"><img src="<?=$item['PicUrl']?>"></a>
+			</div>
+			<div>
+				<a href="#"><?=$item['Title']?></a>
+			</div>
+		</div>
+		<div class="pd-desc">
+			<span>价格：</span><span class="price"><?=($item['Price']==''?'面谈':$item['Price'])?></span>
+		</div>
+	</li>
+	<?}?>
+</ul>

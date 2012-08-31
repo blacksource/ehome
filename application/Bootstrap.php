@@ -49,7 +49,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 
 		/*list start*/
 		$router->addRoute('channel', new Zend_Controller_Router_Route_Regex(
-		    'channel/(lady|man).html',
+		    'channel/(shipin|jiaju|jiafang|jiazhuang|wujin|zhuangxiu).html',
 		    array(
 		        'controller' => 'channel',
 		        'action'     => 'index'
@@ -58,6 +58,18 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 		    '%s.html'
 		));
 		/*list end*/
+
+		/*product start*/
+		$router->addRoute('product', new Zend_Controller_Router_Route_Regex(
+		    'product/([a-zA-Z-_0-9-]+).html',
+		    array(
+		        'controller' => 'product',
+		        'action'     => 'index'
+		    ),
+		    array(1 => 'iid'),
+		    '%s.html'
+		));
+		/*product end*/		
 	}
 
     protected function _initLayoutHelper()

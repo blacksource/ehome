@@ -13,13 +13,26 @@ class ChannelController extends Zend_Controller_Action
 	public function indexAction()
 	{
 		$channelName = $this->_request->getParam('name');
-		$classId = 1;
+		$classId = '1';
 		switch ($channelName) {
-			case 'lady':
-				$classId = 1;
+			case 'jiaju':
+				$classId = '1';
 				break;
-			case 'man':
-				$classId = 2;
+			case 'jiafang':
+				$classId = '2';
+				break;
+			case 'shipin':
+				$classId = '3';
+				break;
+			case 'jiazhuang':
+				$classId = '4';
+				break;
+			case 'wujin':
+				$classId = '5';
+				break;
+			case 'zhuangxiu':
+				$classId = '6';
+				break;
 			default:
 				break;
 		}

@@ -1,2 +1,18 @@
 <?= $this->partial('/list/_left.phtml', array('categories'=>$this->categories)) ?>
 <?= $this->partial('/list/_list.phtml', array('items'=>$this->items)) ?>
+
+
+
+<div>test</div>
+<div style="clear:both;display:none">
+	<? foreach ($this->categories as $category) {
+		if($category["ClassId2"] == 0 || $category["ClassId2"] == NULL){?>
+		<div>
+			<dt><?=$category["Name"]?></dt>
+			<? foreach ($this->categories as $subCate) {
+				if($subCate["ClassId2"] == $category["Id"]){?>
+				<dd><a target="_blank" href="/list/<?=$subCate["Id"]?>.html" ><?=$subCate["Name"]?></a></dd>
+			<?}}?>
+		</div>
+	<?}}?>
+</div>

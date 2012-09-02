@@ -57,6 +57,16 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 		    array(1 => 'name'),
 		    '%s.html'
 		));
+
+		$router->addRoute('list', new Zend_Controller_Router_Route_Regex(
+		    'list/([a-zA-Z-_0-9-]+).html',
+		    array(
+		        'controller' => 'list',
+		        'action'     => 'index'
+		    ),
+		    array(1 => 'cid'),
+		    '%s.html'
+		));
 		/*list end*/
 
 		/*product start*/

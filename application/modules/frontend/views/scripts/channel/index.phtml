@@ -1,9 +1,8 @@
-<?= $this->partial('/list/_left.phtml', array('categories'=>$this->categories)) ?>
+<?= $this->partial('/list/_left.phtml', array('categories'=>$this->categories, 'currentClass'=>$this->currentClass)) ?>
 <?= $this->partial('/list/_list.phtml', array('items'=>$this->items)) ?>
 
 
 
-<div>test</div>
 <div style="clear:both;display:none">
 	<? foreach ($this->categories as $category) {
 		if($category["ClassId2"] == 0 || $category["ClassId2"] == NULL){?>

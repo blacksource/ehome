@@ -1,1 +1,74 @@
-aaaaaaaaaaaa
+<div class="pd">
+	<div class="pd-title">
+		<h3><?=$this->item["Title"]?></h3>
+	</div>
+	<div class="pd-property">
+		<div class="pd-property-l">
+			<div class="pd-img">
+				<img width="310px" height="310px" src="<?=$this->item["PicUrl"]?>">
+			</div>
+			<ul class="pd-img-thumb">
+				<? $index=0;  foreach ($this->itemImgs as $img) {?>
+					<li class="<?=($index++==0?'selected':'')?>">
+						<a href="#"><img width="40px" height="40px" src="<?=$img["PicSUrl"]?>"></a>
+					</li>
+				<?}?>
+			</ul>
+		</div>
+		<div class="pd-property-r">
+			<ul class="pd-meta">
+				<li><span>价　格：</span><em>¥</em><strong class="price"><?=$this->item["Price"]?></strong></li>
+				<li><span>编　号：</span><?=$this->item["ItemId"]?></li>
+				<li><span>材　质：</span><?=$this->item["Material"]?></li>
+				<li><span>风　格：</span><?=$this->item["Style"]?></li>
+				<li><span>品　牌：</span><?=$this->item["Brand"]?></li>
+			</ul>
+			<div class="pd-sku">
+				<div class="pd-sku-options">
+					<span>颜　色：</span>
+					<ul>
+						<?foreach ($this->products as $product) {?>
+							<li>
+							<a href="#">
+								<span><?=$product["Color"]?></span>
+							</a>
+						</li>
+						<?}?>
+					</ul>
+				</div>
+				<div class="pd-sku-options">
+					<span>规　格：</span>
+					<ul>
+						<?foreach ($this->products as $product) {?>
+							<li>
+							<a href="#">
+								<span><?=$product["Color"]?></span>
+							</a>
+						</li>
+						<?}?>
+					</ul>
+				</div>
+				<div class="pd-action">
+					<div class="pd-action-buy">
+						<a id="J_LinkBuy" href="#" data-addfastbuy="true" title="点击此按钮，到下一步确认购买信息。">立刻购买<b></b></a>
+					</div>
+					<div class="pd-action-basket">
+						<a href="#" id="J_LinkBasket">加入购物车<b></b></a>
+					</div>
+				</div>
+				<div style="clear:both"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<ul class="nav pd-nav clearfix">
+	<li class="selected">
+		<a href="#description">商品详情</a>
+	</li>
+</ul>
+<div>
+	<div>
+		<?=$this->item["Description"]?>
+	</div>
+</div>

@@ -79,7 +79,19 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 		    array(1 => 'iid'),
 		    '%s.html'
 		));
-		/*product end*/		
+		/*product end*/
+
+		/*article begin*/
+		$router->addRoute('news', new Zend_Controller_Router_Route_Regex(
+		    'news/(\d+)\.html',
+		    array(
+		        'controller' => 'news',
+		        'action'     => 'show'
+		    ),
+		    array(1 => 'id'),
+		    '%s.html'
+		));
+		/*article end*/		
 	}
 
     protected function _initLayoutHelper()

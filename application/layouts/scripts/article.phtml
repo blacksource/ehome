@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0025)http://m.163.com/android/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="yui3-js-enabled">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <script type="text/javascript" src="/js/jquery-1.8.0.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/js/main.js" charset="utf-8"></script>
+    <title><?=$this->currentClassName?>  E城E家</title>
+</head>
+<body>
+    <div class="wrapper">
+        <?= $this->partial('_header.phtml'); ?>
+        <?= $this->partial('_nav.phtml', array('currentClassName'=>$this->currentClassName)); ?>
+        <div class="container">
+            <div>
+                <?= $this->layout()->content; ?>
+            </div>
+       </div>
+        <?= $this->partial('_footer.phtml'); ?>
+    </div>
+</body>
+</head>

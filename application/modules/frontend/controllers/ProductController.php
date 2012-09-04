@@ -26,7 +26,6 @@ class ProductController extends Zend_Controller_Action
 			// get products 
 			$productModel = new Product();
 			$this->view->products = $productModel->getByItemId($iid);
-			var_dump($this->view->products);
 
 			// get shop info	
 			$shopId = $this->view->item["ShopId"];	

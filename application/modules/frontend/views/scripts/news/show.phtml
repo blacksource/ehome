@@ -1,6 +1,6 @@
 <?= $this->partial('news/_left.phtml') ?>
 <div class="article box">
-	<h2><?=$this->news['Title']?></h2>
+	<h2 class="art-title"><?=$this->news['Title']?></h2>
 	<div class="art-meta">
 		<span>发表于：<?=date('Y-m-d', strtotime($this->news['CreatedAt']))?></span>
 		<span>浏览数：<?=$this->news['Views']?></span>

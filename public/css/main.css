@@ -661,6 +661,9 @@ ul.slidy-menu li.slidy-link-selected a {
 .art{
 	margin-bottom: 20px;
 }
+.art-title{
+	font-size: 20px;
+}
 .art-title a{
 	color: #2A85E8;
 }
@@ -686,7 +689,7 @@ ul.slidy-menu li.slidy-link-selected a {
 	margin-bottom: 10px;
 }
 .readmore a{
-	background: #00A6FC;
+	background: orange;
 	display: inline-block;
 	text-align: center;
 	padding: 9px 34px 11px;
@@ -700,6 +703,10 @@ ul.slidy-menu li.slidy-link-selected a {
 	font-size: 16px;
 	color: white;
 	float: right;
+	border-radius: 4px;
+}
+.readmore a:hover{
+	background: #ff8a00;
 }
 .art hr{
 	border: dashed #DDD;

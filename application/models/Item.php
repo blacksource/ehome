@@ -9,7 +9,7 @@ class Item extends Zend_Db_Table_Abstract
 	{
 		$select = $this->select()
 			   ->setIntegrityCheck(false)
-			   ->from("Item", array('ItemId','Title','PicUrl','Price'))
+			   ->from("item", array('ItemId','Title','PicUrl','Price'))
 			   ->where("ShopId=?", $shopId);
 		return $this->fetchAll($select)->toArray();
 	} 
@@ -18,7 +18,7 @@ class Item extends Zend_Db_Table_Abstract
 	{
 		$select = $this->select()
 				->setIntegrityCheck(false)
-			   	->from("Item", array('ItemId','Title','PicUrl','Price'))
+			   	->from("item", array('ItemId','Title','PicUrl','Price'))
 				->where('BigClassId=?', $classId);
 		return $this->fetchAll($select)->toArray();
 	}
@@ -27,7 +27,7 @@ class Item extends Zend_Db_Table_Abstract
 	{
 		$select = $this->select()
 				->setIntegrityCheck(false)
-			   	->from("Item", array('ItemId','Title','PicUrl','Price'))
+			   	->from("item", array('ItemId','Title','PicUrl','Price'))
 				->where('ClassId=?', $classId);
 		return $this->fetchAll($select)->toArray();
 	}

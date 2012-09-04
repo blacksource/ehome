@@ -9,7 +9,7 @@ class Product extends Zend_Db_Table_Abstract
 	{
 		$select = $this->select()
 			   ->setIntegrityCheck(false)
-			   ->from("Product", array('ProductId','Color','Specification'))
+			   ->from("product", array('ProductId','Color','Specification'))
 			   ->where("ItemId=?", $iid);
 		return $this->fetchAll($select)->toArray();
 	}

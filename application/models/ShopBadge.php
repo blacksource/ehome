@@ -2,7 +2,7 @@
 
 class ShopBadge extends Zend_Db_Table_Abstract
 {
-	protected $_name = 'ShopBadge';
+	protected $_name = 'shopbadge';
 
 	public function getByShopId($shopId)
 	{

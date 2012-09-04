@@ -1,12 +1,11 @@
 <?= $this->partial('news/_left.phtml') ?>
 <div class="article box">
-	<h2>从37signals身上我们看到了什么？——创业圈里稀缺的人本主义精神</h2>
+	<h2><?=$this->news['Title']?></h2>
 	<div class="art-meta">
-			发表于<strong>27分钟前</strong>
+		<span>发表于：<?=date('Y-m-d', strtotime($this->news['CreatedAt']))?></span>
+		<span>浏览数：<?=$this->news['Views']?></span>
 	</div>
 	<div>
-		<p><a href="http://img01.36krcnd.com/wp-content/uploads/2012/09/images-1.jpg" target="_blank"><img class="aligncenter size-full wp-image-150128" title="images (1)" src="http://img02.36krcnd.com/wp-content/uploads/2012/09/images-1.jpg" alt="" width="259" height="195"></a></p>
-		<p>前阵子，国外媒体快公司采访37signals CEO的一篇<a href="http://www.fastcompany.com/3000852/37signals-earns-millions-each-year-its-ceo%E2%80%99s-model-his-cleaning-lady" rel="external nofollow" target="_blank">文章</a>在圈子里引起了不小波澜。在这次采访中，Fried毫不避讳地发表了自己对美国创业圈生态的看法：</p>
-		<p>Fried的这番言论可谓火药味十足，看完以后你也可能会以为自己又回到了工业时代初期大资本家剥削工人阶级的年代。然后，已经透支的员工就像坏死的零件一样，可以随意被替换。但与那个时代不同的是，那个时代是资本家在单向剥削工人阶级，但是现在，这些公司的老板们跟员工一样忙得焦头烂额，就好像人人都被洗脑——公司自上而下，大家一荣俱荣，一损俱损。而且，所有人对这种做法都深信不疑，这也就是Fried所谓的行业病态。Fried的这番话虽然激进，也不排除他在采访中因为情绪激动有些口不择言，但从这番话中，我们却看到了创业圈里极其稀缺的一种东西——人本主义精神。首先，作为一家公司的CEO，顶着被另外一些同行“围攻”的压力，借助一个公共平台说出这样一番话，这是需要勇气的。其次，我们可以这么说，这里有一家公司关心自己，警惕员工的工作状态和心理状态，而不是将大家统统视作拼命工作自我燃尽的行尸走肉。而Fried这么说，也确有他自己的底气。在我们之前刊登的另外一篇文章<a href="http://www.36kr.com/p/146761.html">《变化》</a>中，我们便提及了Fried的一些新尝试：</p>
+		<?=$this->news['Content']?>
 	</div>
 </div>

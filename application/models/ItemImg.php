@@ -2,6 +2,8 @@
 
 class ItemImg extends Zend_Db_Table_Abstract
 {
+	protected $_name = 'itemimg';
+
 	public function getByItemId($iid)
 	{
 		$select = $this->select()

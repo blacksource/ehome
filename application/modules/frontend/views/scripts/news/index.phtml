@@ -1,48 +1,28 @@
 <?= $this->partial('news/_left.phtml') ?>
 <div class="arts box">
-	<div class="art">
-		<h3 class="art-title"><a target="_blank" href="#">苹果和Google应该如何把二维码变成主流</a></h3>
-		<div class="art-meta">
-			发表于<strong>27分钟前</strong>
-		</div>
-		<div class="art-summary">
-			<div class="art-pic">
-				<a href="#" title="苹果和Google应该如何把二维码变成主流">
-					<img width="150" src="http://static.36krcnd.com/resize/w_150/h_200/wp-content/uploads/2012/09/22227.jpg" alt="苹果和Google应该如何把二维码变成主流"/>
-				</a>
+	<?foreach ($this->news as $news) {?>
+		<div class="art">
+			<h3 class="art-title"><a target="_blank" href="/news/<?=$news['Id']?>.html"><?=$news['Title']?></a></h3>
+			<div class="art-meta">
+				<span>发表于：<?=date('Y-m-d', strtotime($news['CreatedAt']))?></span>
+				<span>浏览数：<?=$news['Views']?></span>
 			</div>
-			<div class="art-summary-context">
-				<p>二维码自身具有的优势让它逐渐成为了各大企业的宠儿，逐渐成为企业推广产品的主流策略。现在的二维码到处都是——无论是地铁、公车、商场、咖啡厅，只要你能想到的公共场所几乎都留下了二维码的脚印。但另一方面，令人沮丧的是，对企业是主流的二维码对用户却并不见得。事实上，我发现那些遍布大街小巷的二维码很多都是乏人问津。真正能够掏出手机拍摄这些二维码的人是少之又少。</p>
+			<div class="art-summary">
+				<div class="art-pic">
+					<a href="/news/<?=$news['Id']?>.html" title="<?=$news['Title']?>">
+						<img width="150" src="<?=$news['PicUrl']?>" alt="<?=$news['Title']?>"/>
+					</a>
+				</div>
+				<div class="art-summary-context">
+					<?=$news["Summary"]?>
+				</div>
 			</div>
-		</div>
-		<div class="art-readmore">
-			<div class="readmore">
-				<a href="http://www.36kr.com/p/149898.html">继续阅读</a>
+			<div class="art-readmore">
+				<div class="readmore">
+					<a href="/news/<?=$news['Id']?>.html">继续阅读</a>
+				</div>
 			</div>
+			<hr/>
 		</div>
-		<hr/>
-	</div>
-
-	<div class="art">
-		<h3 class="art-title"><a target="_blank" href="#">苹果和Google应该如何把二维码变成主流</a></h3>
-		<div class="art-meta">
-			发表于<strong>27分钟前</strong>
-		</div>
-		<div class="art-summary">
-			<div class="art-pic">
-				<a href="#" title="苹果和Google应该如何把二维码变成主流">
-					<img width="150" src="http://static.36krcnd.com/resize/w_150/h_200/wp-content/uploads/2012/09/22227.jpg" alt="苹果和Google应该如何把二维码变成主流"/>
-				</a>
-			</div>
-			<div class="art-summary-context">
-				<p>二维码自身具有的优势让它逐渐成为了各大企业的宠儿，逐渐成为企业推广产品的主流策略。现在的二维码到处都是——无论是地铁、公车、商场、咖啡厅，只要你能想到的公共场所几乎都留下了二维码的脚印。但另一方面，令人沮丧的是，对企业是主流的二维码对用户却并不见得。事实上，我发现那些遍布大街小巷的二维码很多都是乏人问津。真正能够掏出手机拍摄这些二维码的人是少之又少。</p>
-			</div>
-		</div>
-		<div class="art-readmore">
-			<div class="readmore">
-				<a href="http://www.36kr.com/p/149898.html">继续阅读</a>
-			</div>
-		</div>
-		<hr/>
-	</div>
+	<?}?>
 </div>

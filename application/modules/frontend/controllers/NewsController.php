@@ -11,10 +11,15 @@ class NewsController extends Zend_Controller_Action
 
 	public function indexAction()
 	{
+		$newsModel = new News();
+		$this->view->news = $newsModel->getAll();
 	}
 
 	public function showAction()
 	{
-		
+		$id = $this->_request->getParam('id');
+		$newsModel = new News();
+		$newsModel->addView($id, 1);
+		$this->view->news = $newsModel->getById($id);
 	}
 }

@@ -669,6 +669,9 @@ ul.slidy-menu li.slidy-link-selected a {
 	padding: 10px;
 	text-align: left;
 }
+.art-meta span{
+	margin-right: 10px;
+}
 .art-pic{
 	float: left;
 }

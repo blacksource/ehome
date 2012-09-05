@@ -19,10 +19,10 @@ $(function(){
 			children:	'a',
 			menu:		true,
 			pause:		true,
-			speed:		200,
+			speed:		600,
 			time:		4000,
 			width:		730,
-			height:		330
+			height:		300
 		});
 	}
 

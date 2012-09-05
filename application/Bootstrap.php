@@ -91,7 +91,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 		    array(1 => 'id'),
 		    '%s.html'
 		));
-		/*article end*/		
+		/*article end*/
 	}
 
     protected function _initLayoutHelper()

@@ -208,6 +208,7 @@ img{
 }
 .min-bar-content span{
 	color: #C00;
+	padding-right: 5px;
 }
 .min-bar-content a:hover{
 	color: #C00;
@@ -665,23 +666,67 @@ ul.slidy-menu li.slidy-link-selected a {
 }
 .products{
 	display: block;
+	margin-top: 10px;
 }
 .products li{
-	width:230px;
-	height: 283px;
-	margin:8px;
+	width:250px;
+	height: 285px;
+	float: left;
+	background: white;
+	display: inline;
+	margin-right: 4px;
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+	border:1px solid #DDD;
 }
 .products li:hover{
-	border:1px solid #D67FB0;
+	border:1px solid #999;
 }
 .price{
 	color: red;
 }
-.products .pd-img{
-	height:260px;
+.product-img img{
+	width: 250px;
+	height:200px;
 }
-.products .pd-desc{
+.product-title{
+	padding: 2px 5px;
+	font:bold 14px/1.5 "microsoft yahei";
+	height:50px;
 	background:#F2F2F2;
+	vertical-align: middle;
+	border-bottom: 1px dashed #CCC;
+}
+.product-desc{
+	height: 45px;
+}
+.product-desc .price{
+	line-height: 45px;
+	font:bold 20px/1.5 Arial;
+	color:#F36;
+	float:left;
+	padding:10px 5px;
+}
+.product-desc a{
+	background: orange;
+	display: inline-block;
+	text-align: center;
+	margin:5px 10px;
+	padding: 9px 34px 11px;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	font-family: "Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
+	position: relative;
+	cursor: pointer;
+	border: none;
+	font-size: 16px;
+	color: white;
+	float: right;
+	border-radius: 4px;
+}
+.product-desc a:hover{
+	background: #FF8A00;
 }
 /***************shop end*********************/
 

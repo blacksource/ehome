@@ -1,16 +1,15 @@
 <ul class="products nav">
 	<? foreach ($this->items as $item) {?>
-	<li class="box">
-		<div calss="pd-img">
-			<div>
-				<a href="/product/<?=$item['ItemId']?>.html"><img src="<?=$item['PicUrl']?>"></a>
-			</div>
-			<div>
-				<a href="/product/<?=$item['ItemId']?>.html"><?=$item['Title']?></a>
-			</div>
+	<li>
+		<div class="product-img">
+			<a href="/product/<?=$item['ItemId']?>.html"><img src="<?=$item['PicUrl']?>"></a>
 		</div>
-		<div class="pd-desc">
-			<span>价格：</span><span class="price"><?=($item['Price']==''?'面谈':$item['Price'])?></span>
+		<div class="product-title">
+			<a href="/product/<?=$item['ItemId']?>.html"><h3><?=$item['Title']?></h3></a>
+		</div>
+		<div class="product-desc">
+			<span class="price">¥<?=($item['Price']==''?'面谈':$item['Price'])?></span>
+			<a href="/product/<?=$item['ItemId']?>.html" target="_blank">去看看</a>
 		</div>
 	</li>
 	<?}?>

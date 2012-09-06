@@ -5,13 +5,13 @@
             <a href="/channel/jiaju.html">住宅家具</a>
             <?= $this->partial('nav/_jiaju.phtml') ?>
         </li>
+         <li class="<?=($this->currentClassName=='家居饰品'?'active':'')?>">
+            <a href="/channel/shipin.html">家居饰品</a>
+            <?= $this->partial('nav/_shipin.phtml') ?>
+        </li>
         <li class="<?=($this->currentClassName=='家纺布艺'?'active':'')?>">
             <a href="/channel/jiafang.html">家纺布艺</a>
             <?= $this->partial('nav/_jiafang.phtml') ?>
-        </li>
-        <li class="<?=($this->currentClassName=='家居饰品'?'active':'')?>">
-            <a href="/channel/shipin.html">家居饰品</a>
-            <?= $this->partial('nav/_shipin.phtml') ?>
         </li>
         <li class="<?=($this->currentClassName=='家装主材'?'active':'')?>">
             <a href="/channel/jiazhuang.html">家装主材</a>
@@ -22,7 +22,7 @@
             <?= $this->partial('nav/_wujin.phtml') ?>
         </li>
         <li>
-            <a href="/channel/zhuangxiu.html">学装修</a>
+            <a href="/channel/zhuangxiu.html">装修宝典</a>
         </li>
     </ul>
 </div>

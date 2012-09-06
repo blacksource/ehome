@@ -22,6 +22,8 @@ class ShopController extends Zend_Controller_Action
 
 		$shopBadge = new ShopBadge();
 		$this->view->badges = $shopBadge->getByShopId($shopId);
+
+		$shop->addView($shopId, 1);
 	}
 
 	public function introAction()

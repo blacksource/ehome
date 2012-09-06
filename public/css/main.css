@@ -266,6 +266,7 @@ img{
 	width:200px;
 	float: left;
 	border:1px solid #DDDDDD;
+	font-size: 14px;
 }
 .hot-categorys li{
 	list-style-type: none;
@@ -327,10 +328,9 @@ img{
 	border:1px solid #DDDDDD;
 	border-radius:0 0 3px 3px;
 
-	filter: progid:DXImageTransform.Microsoft.Shadow(color='#BBB3C1', Direction=145, Strength=3);  
-	-webkit-box-shadow: 2px 2px 3px #BBB3C1; 
-	-moz-box-shadow: 2px 2px 3px #BBB3C1;
-	box-shadow: 2px 2px 3px #BBB3C1;
+	box-shadow:2px 2px 5px rgba(0, 0, 0, .3);
+	-moz-box-shadow:2px 2px 5px rgba(0,0,0,.3);
+	-webkit-box-shadow:2px 2px 5px rgba(0, 0, 0, .3);
 }
 .category
 {
@@ -590,7 +590,8 @@ ul.slidy-menu li.slidy-link-selected a {
 
 /***************shop start*********************/
 .shop-banner{
-	height:100px;
+	width: 978px;
+	height:130px;
 	border:1px solid #DDDDDD;
 }
 .shop-left-box{
@@ -624,6 +625,9 @@ ul.slidy-menu li.slidy-link-selected a {
 .shop-info td{
 	vertical-align: top;
 }
+.shop-info .badges li{
+	padding: 2px 5px;
+}
 .shop-left-top{
 	background-color:#F2F2F2;height:25px;padding-left:10px;
 }
@@ -634,7 +638,7 @@ ul.slidy-menu li.slidy-link-selected a {
 	margin:10px 0px 10px 0px;
 }
 .dot-line{
-	color: blue;border-style:dotted;margin:auto 0;
+	color: #DDDDDD;border-style:dotted;margin:auto 0;
 }
 .shop-intro{
 	padding:5px 15px 15px 15px;
@@ -663,19 +667,9 @@ ul.slidy-menu li.slidy-link-selected a {
 	display: block;
 }
 .products li{
-	border:1px solid #DDDDDD;
 	width:230px;
 	height: 283px;
-	/*text-align: left;*/
 	margin:8px;
-	border-radius:0 0 3px 3px;
-	/*box-shadow:2px 3px 10px #BBB3C1;*/
-
-	filter: progid:DXImageTransform.Microsoft.Shadow(color='#BBB3C1', Direction=145, Strength=3);  
-	/*width: 250px; height: 90px;  */
-	-webkit-box-shadow: 2px 2px 3px #BBB3C1; 
-	-moz-box-shadow: 2px 2px 3px #BBB3C1;
-	box-shadow: 2px 2px 3px #BBB3C1;
 }
 .products li:hover{
 	border:1px solid #D67FB0;

@@ -1,7 +1,7 @@
 <div class="shop-left-top">商家信息</div>
 <div class="shop-left">
 	<div class="shop-brand">
-		<img src="<?=$this->shop["Logo"]?>"/>
+		<img width="180" src="<?=$this->shop["Logo"]?>"/>
 	</div>
 	<hr size=1 class="dot-line" style="width:150px;"> 
 	<div class="shop-info">
@@ -44,9 +44,9 @@
 	</div>
 	<hr size=1 class="dot-line" style="width:150px;"> 
 	<div class="shop-info">
-		<ul class="nav">
+		<ul class="nav badges">
 			<? foreach ($this->badges as $badge) {?>
-				<li><a href="#"><img src="<?=$badge['PicUrl']?>" style="width:60px;height:60px;" alt="<?=$badge['Name']?>"/></a></li>
+				<li><a href="#" title="<?=$badge['Name']?>"><img src="<?=$badge['PicUrl']?>" alt="<?=$badge['Name']?>"/></a></li>
 			<?}?>
 		</ul>
 	</div>

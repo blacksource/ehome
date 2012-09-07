@@ -2,14 +2,14 @@
 <div class="arts box">
 	<?foreach ($this->articles as $article) {?>
 		<div class="art">
-			<h3 class="art-title"><a target="_blank" href="/article/<?=$article['Id']?>.html"><?=$article['Title']?></a></h3>
+			<h3 class="art-title"><a target="_blank" href="/zhuangxiu/<?=$article['Id']?>.html"><?=$article['Title']?></a></h3>
 			<div class="art-meta">
 				<span>发表于：<?=date('Y-m-d', strtotime($article['CreatedAt']))?></span>
 				<span>浏览数：<?=$article['Views']?></span>
 			</div>
 			<div class="art-summary">
 				<div class="art-pic">
-					<a href="/article/<?=$article['Id']?>.html" title="<?=$article['Title']?>">
+					<a href="/zhuangxiu/<?=$article['Id']?>.html" title="<?=$article['Title']?>">
 						<img width="150" src="<?=$article['PicUrl']?>" alt="<?=$article['Title']?>"/>
 					</a>
 				</div>
@@ -19,7 +19,7 @@
 			</div>
 			<div class="art-readmore">
 				<div class="readmore">
-					<a href="/article/<?=$article['Id']?>.html">继续阅读</a>
+					<a href="/zhuangxiu/<?=$article['Id']?>.html">继续阅读</a>
 				</div>
 			</div>
 			<hr/>

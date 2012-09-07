@@ -35,17 +35,21 @@ img{
 }
 .nav-bar-top{
 	height: 39px;
+	line-height: 37px;
 	font-size: 14px;
 	font-weight:bold;
 	color: white;
 	padding-top: 1px;
 	background: url(/img/top-nav-bg.jpg) repeat-x;
 }
-.nav-bar-top>ul>li
-{
-	width:90px;
+.nav-bar-top>ul{
 	height: 37px;
 	line-height:37px;
+}
+.nav-bar-top>ul>li
+{
+	float: left;
+	width:90px;
 	background: url(/img/top-nav-sep.jpg) no-repeat;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
@@ -264,6 +268,7 @@ img{
 	width: 200px;
 	text-align: center;
 	line-height: 30px;
+	*margin-bottom: -3px;
 }
 .hot-categorys div{
 	height: 30px;
@@ -297,7 +302,6 @@ img{
 .floor-middle-r{
 	display: block;
 	position: relative;
-	width: 780px;
 	height: 300px;
 	overflow: hidden;
 	background-color:black;
@@ -762,6 +766,9 @@ ul.slidy-menu li.slidy-link-selected a {
 	/*color: #555;*/
 	font-size: 16px;
 	line-height: 26px;
+}
+.art-summary-context p{
+	text-indent: 2em;
 }
 .art-readmore{
 	height: 35px;

@@ -40,11 +40,7 @@ class Backend_UploadController extends Zend_Controller_Action
 				else
 				{
 					$fileName = date('dhis').$suffix.strrchr($_FILES['uploadFile']['name'], '.');
-				}
-
-				echo $fileName;
-				return;
-				
+				}				
 
 				if(!move_uploaded_file($_FILES['uploadFile']['tmp_name'], $rootPath.$picPath.$fileName))
 				{

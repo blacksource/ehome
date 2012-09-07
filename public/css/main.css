@@ -55,12 +55,6 @@ img{
 	color: white;
 	display: block;
 }
-/*.nav-bar-top li:hover{
-	background-color: #FFFFFF;
-}
-.nav-bar-top a:hover{
-	color: #900!important;
-}*/
 .nav-bar-top-hover{
 	background-color: #FFFFFF;
 	color: #900!important;	
@@ -69,10 +63,6 @@ img{
 {
 	background: url(/img/top-nav-active-bg.jpg) repeat-x;
 }
-/*.top-nav-sub
-{
-	color: black;
-}*/
 .nav-sub-box{
 	border-top: 0px solid transparent;
 	border-left: 2px solid #9B0000;
@@ -836,4 +826,8 @@ ul.slidy-menu li.slidy-link-selected a {
 .footer{
 	text-align: center;
 	margin: 0 auto;
+}
+
+.hide{
+	display:none;
 }

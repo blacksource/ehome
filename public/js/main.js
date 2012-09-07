@@ -56,4 +56,14 @@ $(function(){
 		img = img.replace("40x40", "310x310");
 		$(".pd-img img").attr("src", img);
 	});
+
+
+	$(".product-box").mouseover(function(){
+			$(this).addClass("product-box-hover");
+		}
+	);
+	$(".product-box").mouseout(function(){
+			$(this).removeClass("product-box-hover");
+		}
+	);
 });

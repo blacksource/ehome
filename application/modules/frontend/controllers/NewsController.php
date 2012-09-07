@@ -13,6 +13,7 @@ class NewsController extends Zend_Controller_Action
 	{
 		$newsModel = new News();
 		$this->view->news = $newsModel->getAll();
+		$this->view->hots = $newsModel->getHot();
 	}
 
 	public function showAction()
@@ -21,5 +22,6 @@ class NewsController extends Zend_Controller_Action
 		$newsModel = new News();
 		$newsModel->addView($id, 1);
 		$this->view->news = $newsModel->getById($id);
+		$this->view->hots = $newsModel->getHot();
 	}
 }

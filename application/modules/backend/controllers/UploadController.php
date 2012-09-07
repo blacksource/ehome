@@ -18,6 +18,7 @@ class Backend_UploadController extends Zend_Controller_Action
 		{
 			$channel = $request->getParam('channel');
 			$suffix = $request->getParam('suffix');
+			$fileName = $request->getParam('fileName');
 
 			if($_FILES['uploadFile']['type'] == "image/jpeg" ||
 				$_FILES['uploadFile']['type'] == "image/png" || 
@@ -32,7 +33,18 @@ class Backend_UploadController extends Zend_Controller_Action
 				   		echo('创建文件夹失败:'.$rootPath.$picPath);   
 					}
 				}
-				$fileName = date('dhis').$suffix.strrchr($_FILES['uploadFile']['name'], '.');
+				if($fileName != '')
+				{
+					$fileName = $fileName.$suffix.strrchr($_FILES['uploadFile']['name'], '.');
+				}
+				else
+				{
+					$fileName = date('dhis').$suffix.strrchr($_FILES['uploadFile']['name'], '.');
+				}
+
+				echo $fileName;
+				return;
+				
 
 				if(!move_uploaded_file($_FILES['uploadFile']['tmp_name'], $rootPath.$picPath.$fileName))
 				{

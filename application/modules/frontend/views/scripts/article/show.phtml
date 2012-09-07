@@ -1,0 +1,11 @@
+<?= $this->partial('article/_left.phtml', array('hots'=>$this->hots)) ?>
+<div class="article box">
+	<h2 class="art-title"><?=$this->article['Title']?></h2>
+	<div class="art-meta">
+		<span>发表于：<?=date('Y-m-d', strtotime($this->article['CreatedAt']))?></span>
+		<span>浏览数：<?=$this->article['Views']?></span>
+	</div>
+	<div>
+		<?=$this->article['Content']?>
+	</div>
+</div>

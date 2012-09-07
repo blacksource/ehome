@@ -49,7 +49,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 
 		/*list start*/
 		$router->addRoute('channel', new Zend_Controller_Router_Route_Regex(
-		    'channel/(shipin|jiaju|jiafang|jiazhuang|wujin|zhuangxiu).html',
+		    '(shipin|jiaju|jiafang|jiazhuang|wujin).html',
 		    array(
 		        'controller' => 'channel',
 		        'action'     => 'index'
@@ -86,6 +86,21 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 		    'news/(\d+)\.html',
 		    array(
 		        'controller' => 'news',
+		        'action'     => 'show'
+		    ),
+		    array(1 => 'id'),
+		    '%s.html'
+		));
+
+		$router->addRoute('zhuangxiu', new Zend_Controller_Router_Route(
+			'zhuangxiu.html',
+			array('controller'=>'article', 'action'=>'index'))
+		);
+
+		$router->addRoute('zhuangxiu_show', new Zend_Controller_Router_Route_Regex(
+		    'zhuangxiu/(\d+)\.html',
+		    array(
+		        'controller' => 'article',
 		        'action'     => 'show'
 		    ),
 		    array(1 => 'id'),

@@ -1,16 +1,19 @@
 <ul class="products nav">
 	<? foreach ($this->items as $item) {?>
 	<li>
-		<div class="product-img">
-			<a href="/product/<?=$item['ItemId']?>.html"><img src="<?=$item['PicUrl']?>"></a>
+		<div class="product-box">
+			<div class="product-img">
+				<a href="/product/<?=$item['ItemId']?>.html"><img src="<?=$item['PicUrl']?>"></a>
+			</div>
+			<div class="product-title">
+				<a href="/product/<?=$item['ItemId']?>.html"><h3><?=$item['Title']?></h3></a>
+			</div>
+			<div class="product-desc">
+				<span class="price">¥<?=($item['Price']==''?'面谈':$item['Price'])?></span>
+				<a href="/product/<?=$item['ItemId']?>.html" target="_blank">去看看</a>
+			</div>
 		</div>
-		<div class="product-title">
-			<a href="/product/<?=$item['ItemId']?>.html"><h3><?=$item['Title']?></h3></a>
-		</div>
-		<div class="product-desc">
-			<span class="price">¥<?=($item['Price']==''?'面谈':$item['Price'])?></span>
-			<a href="/product/<?=$item['ItemId']?>.html" target="_blank">去看看</a>
-		</div>
+		<div class="product-bottom"></div>
 	</li>
 	<?}?>
 </ul>

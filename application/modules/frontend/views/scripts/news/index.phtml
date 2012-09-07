@@ -1,4 +1,4 @@
-<?= $this->partial('news/_left.phtml') ?>
+<?= $this->partial('news/_left.phtml', array('hots'=>$this->hots)) ?>
 <div class="arts box">
 	<?foreach ($this->news as $news) {?>
 		<div class="art">

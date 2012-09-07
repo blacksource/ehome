@@ -17,17 +17,17 @@ img{
 	border:none;
 }
 /*common end*/
-
 .header, .container{
 	width:980px;
 	margin: 0 auto;
 }
 
 .header{
+	padding: 10px 0px;
 	height: 60px;
+	background: url(/img/header-bg.png);
 }
 .logo{
-	margin-top: 10px;
 	height: 60px;
 	width: 220px;
 	display: block;
@@ -39,7 +39,6 @@ img{
 	font-weight:bold;
 	color: white;
 	padding-top: 1px;
-	margin-top:10px;
 	background: url(/img/top-nav-bg.jpg) repeat-x;
 }
 .nav-bar-top>ul>li
@@ -328,15 +327,21 @@ img{
 .box{
 	border:1px solid #DDDDDD;
 	border-radius:0 0 3px 3px;
-
 	box-shadow:2px 2px 5px rgba(0, 0, 0, .3);
 	-moz-box-shadow:2px 2px 5px rgba(0,0,0,.3);
 	-webkit-box-shadow:2px 2px 5px rgba(0, 0, 0, .3);
 }
+.box1{
+	border:1px solid #DDDDDD;
+	border-radius:0 0 3px 3px;
+	box-shadow:0px 1px 3px rgba(0, 0, 0, .3);
+	-moz-box-shadow:0px 1px 3px rgba(0,0,0,.3);
+	-webkit-box-shadow:0px 1px 3px rgba(0, 0, 0, .3);
+}
 .category
 {
 	width:200px;
-	margin:10px 10px 10px 0;
+	margin:0px 10px 10px 0;
 	padding-bottom:20px;
 	background-color:#FAFAFA;
 	float: left;
@@ -344,9 +349,9 @@ img{
 .cate-title{
 	width:100%;
 	height: 30px;
-	background: url(/img/cate-bg.jpg);
+	background: url(/img/cate-bg.png);
 	text-align: center;
-	line-height: 28px;
+	line-height: 25px;
 	color: white;
 	font-size: 14px;
 	font-weight: bold;
@@ -669,29 +674,30 @@ ul.slidy-menu li.slidy-link-selected a {
 	margin-top: 10px;
 }
 .products li{
-	width:250px;
-	height: 285px;
-	float: left;
+	width:245px;
+	height: 305px;
 	background: white;
 	display: inline;
-	margin-right: 4px;
-	padding-bottom: 20px;
-	margin-bottom: 10px;
+	margin-right: 8px;
+	padding-bottom: 10px;
+}
+.product-box{
+	height: 295px;
 	border:1px solid #DDD;
 }
-.products li:hover{
-	border:1px solid #999;
+.product-box-hover{
+	border:1px solid #888;
 }
 .price{
 	color: red;
 }
 .product-img img{
-	width: 250px;
+	width: 243px;
 	height:200px;
 }
 .product-title{
 	padding: 2px 5px;
-	font:bold 14px/1.5 "microsoft yahei";
+	font:bold 13px/1.5 "microsoft yahei";
 	height:50px;
 	background:#F2F2F2;
 	vertical-align: middle;
@@ -711,7 +717,7 @@ ul.slidy-menu li.slidy-link-selected a {
 	background: orange;
 	display: inline-block;
 	text-align: center;
-	margin:5px 10px;
+	margin:2px 10px;
 	padding: 9px 34px 11px;
 	text-decoration: none;
 	font-weight: bold;
@@ -727,6 +733,11 @@ ul.slidy-menu li.slidy-link-selected a {
 }
 .product-desc a:hover{
 	background: #FF8A00;
+}
+.product-bottom{
+	height: 10px;
+	display: block;
+	background:url('/img/box-shadow.png');
 }
 /***************shop end*********************/
 
@@ -784,7 +795,8 @@ ul.slidy-menu li.slidy-link-selected a {
 	border-radius: 4px;
 }
 .readmore a:hover{
-	background: #ff8a00;
+	/*background: #ff8a00;*/
+	background: #c00;
 }
 .art hr{
 	border: dashed #DDD;
@@ -806,6 +818,18 @@ ul.slidy-menu li.slidy-link-selected a {
 	font-size: 16px;
 	line-height: 26px;
 	margin: 0 0 18px;
+}
+
+.hot-articles{
+	padding: 5px 5px 0 20px;
+}
+.hot-articles a{
+	font-size: 14px;
+	color: #1982D1;
+	font-weight: bold;
+}
+.hot-articles a:hover{
+	text-decoration: underline;	
 }
 /***************article end******************/
 

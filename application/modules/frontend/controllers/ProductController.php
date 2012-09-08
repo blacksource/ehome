@@ -25,7 +25,20 @@ class ProductController extends Zend_Controller_Action
 			$this->view->itemImgs = $itemImgModel->getByItemId($iid);
 			// get products 
 			$productModel = new Product();
-			$this->view->products = $productModel->getByItemId($iid);
+			$products = $productModel->getByItemId($iid);
+			$colors = array();
+			$Specifications = array();
+			foreach ($products as $product) {
+				array_push($colors, $product["Color"]);
+				array_push($Specifications, $product["Specification"]);
+			}
+			$this->view->products = json_encode($products);
+			// remove Duplicate
+			$colors = array_unique($colors);
+			$Specifications = array_unique($Specifications);
+			$this->view->item["Colors"] = $colors;
+			$this->view->item["Specifications"] = $Specifications;
+			$this->view->item["ProductId"] = count($products) > 0 ? $products[0]["ProductId"] : $this->view->item["ItemId"];
 
 			// get shop info	
 			$shopId = $this->view->item["ShopId"];	

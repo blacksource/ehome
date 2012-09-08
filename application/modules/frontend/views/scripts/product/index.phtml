@@ -18,7 +18,7 @@
 		<div class="pd-property-r">
 			<ul class="pd-meta">
 				<li><span>价　格：</span><em>¥</em><strong class="price"><?=$this->item["Price"]?></strong></li>
-				<li><span>编　号：</span><?=$this->item["ItemId"]?></li>
+				<li><span>编　号：</span><label id="productId"><?=$this->item["ProductId"]?></label></li>
 				<li><span>材　质：</span><?=$this->item["Material"]?></li>
 				<li><span>风　格：</span><?=$this->item["Style"]?></li>
 				<li><span>品　牌：</span><?=$this->item["Brand"]?></li>
@@ -26,11 +26,12 @@
 			<div class="pd-sku">
 				<div class="pd-sku-options">
 					<span>颜　色：</span>
-					<ul>
-						<?foreach ($this->products as $product) {?>
-							<li>
-							<a href="#">
-								<span><?=$product["Color"]?></span>
+					<ul class="sku-color-options">
+						<?	$i = 0;
+						foreach ($this->item["Colors"] as $color) {?>
+						<li>
+							<a href="javascript:void(0);" class="<?=$i++==0?'selected':''?>">
+								<span><?=$color?></span>
 							</a>
 						</li>
 						<?}?>
@@ -38,16 +39,18 @@
 				</div>
 				<div class="pd-sku-options">
 					<span>规　格：</span>
-					<ul>
-						<?foreach ($this->products as $product) {?>
-							<li>
-							<a href="#">
-								<span><?=$product["Color"]?></span>
+					<ul class="sku-spec-options">
+						<? $i = 0;
+						foreach ($this->item["Specifications"] as $spec) {?>
+						<li>
+							<a href="javascript:void(0);"  class="<?=$i++==0?'selected':''?>">
+								<span><?=$spec?></span>
 							</a>
 						</li>
 						<?}?>
 					</ul>
 				</div>
+				<input id="jsonProds" type="hidden" value='<?=$this->products?>'/>
 				<div class="pd-action">
 					<div class="pd-action-buy">
 						<a id="J_LinkBuy" href="#" data-addfastbuy="true" title="点击此按钮，到下一步确认购买信息。">立刻购买<b></b></a>

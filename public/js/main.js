@@ -66,4 +66,23 @@ $(function(){
 			$(this).removeClass("product-box-hover");
 		}
 	);
+
+	$(".sku-spec-options a").click(function(){
+		$(".sku-spec-options a").removeClass("selected");
+		$(this).addClass("selected");
+		resetProdInfo();
+	});
 });
+
+function resetProdInfo(){
+	var color = $(".sku-color-options .selected span").text();
+	var spec = $(".sku-spec-options .selected span").text();
+	var prods = eval("(" + $("#jsonProds").val() + ")");
+	// alert(prods.length);
+	$(prods).each(function(index, prod){
+		if(color == prod["Color"] && spec == prod["Specification"]){
+			$(".price").text(prod["Price"]);
+			$("#productId").text(prod["ProductId"]);
+		}
+	});
+}

@@ -46,15 +46,15 @@ img{
 	height: 37px;
 	line-height:37px;
 }
-.nav-bar-top>ul>li
-{
+.nav-bar-top .item{
 	float: left;
 	width:90px;
+	text-align: center;
 	background: url(/img/top-nav-sep.jpg) no-repeat;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 }
-.nav-bar-top li>a{
+.nav-bar-top .item a{
 	width:90px;
 	color: white;
 	display: block;
@@ -80,8 +80,6 @@ img{
 	background-color: white;
 	display: none;
 	z-index: 999999;
-	/*box-shadow:0 0 10px #06C;*/
-	/*box-shadow:2px 1px 10px #9B0000;*/
 }
 .nav-sub-box a{
 	color: black;
@@ -127,12 +125,11 @@ img{
 .nav{
 	vertical-align: middle;
 }
-.nav>li, .nav-v>li{
+.nav li, .nav-v li{
 	text-align:center;
-	/*display: block;*/
 	list-style-type: none;
 }
-.nav>li
+.nav li
 {
 	float: left;
 }
@@ -165,11 +162,14 @@ img{
 {
 	float: right;
 	width: 238px;
+	_margin-left: 740px;
+	_margin-top:-336px;
 }
 .min-bar
 {
 	border:1px solid #E4E4E4;
 	margin-bottom: 10px;
+	_width: 240px;
 }
 .min-bar-toggle{
 	height: 28px;
@@ -336,7 +336,7 @@ img{
 .category
 {
 	width:200px;
-	margin:0px 10px 10px 0;
+	margin:0px 6px 10px 0;
 	padding-bottom:20px;
 	background-color:#FAFAFA;
 	float: left;
@@ -360,12 +360,17 @@ img{
 }
 .cate-item li{
 	line-height: 20px;
-	width:70px;
+	width:80px;
 	text-align: left;
-	padding: 0 6px 0 6px;
+	margin-right: 5px;
+}
+.cate-item a{
+	width: 80px;
+	display: block;
+	padding: 0 0px 0 6px;
 	border-radius: 12px;
 }
-.cate-item li:hover{
+.cate-item a:hover{
 	background-color: #FFE1E1;
 }
 .cate-name{
@@ -381,7 +386,8 @@ img{
 
 /**product start**/
 .pd-box{
-	width:770;min-height:200px;height:auto;margin-left:220px;margin-top:10px;display:block;
+	width:750px;min-height:200px;height:auto;
+	margin-left:220px;margin-top:10px;display:block;
 }
 .pd{
 	padding: 0px 5px;
@@ -592,13 +598,19 @@ ul.slidy-menu li.slidy-link-selected a {
 
 
 /***************shop start*********************/
+.shop-header{
+	width: 978px;
+	margin-right: auto;
+	text-align: center;
+}
 .shop-banner{
 	width: 978px;
 	height:130px;
 	border:1px solid #DDDDDD;
 }
 .shop-left-box{
-	float:left; border:1px solid #DDDDDD;width:200px;box-shadow:3px 2px 10px #BBB3C1;border-radius: 4px;margin-top:10px; 
+	float:left; border:1px solid #DDDDDD;width:200px;box-shadow:3px 2px 10px #BBB3C1;border-radius: 4px;margin-top:10px;
+	display: block; 
 }
 .shop-right-box{
 	width:770;min-height:200px;height:auto;border:1px solid #DDDDDD;margin-left:220px;margin-top:10px;display:block;
@@ -606,6 +618,7 @@ ul.slidy-menu li.slidy-link-selected a {
 .shop-nav{
     background-color: #DDDDDD;
     height: 28px;
+    width: 978px;
 }
 .shop-nav, .shop-nav li{
 	border-left: 1px solid #DDDDDD;
@@ -647,6 +660,7 @@ ul.slidy-menu li.slidy-link-selected a {
 	padding:5px 15px 15px 15px;
 	font-size: 14px;
 	box-shadow:2px 3px 10px #BBB3C1;
+	width: 978px;
 }
 .shop-intro h1{
 	margin-bottom: 10px;
@@ -677,10 +691,12 @@ ul.slidy-menu li.slidy-link-selected a {
 	display: inline;
 	margin-right: 8px;
 	padding-bottom: 10px;
+	float: left;
 }
 .product-box{
 	height: 295px;
 	border:1px solid #DDD;
+	width:245px;
 }
 .product-box-hover{
 	border:1px solid #888;
@@ -694,11 +710,14 @@ ul.slidy-menu li.slidy-link-selected a {
 }
 .product-title{
 	padding: 2px 5px;
-	font:bold 13px/1.5 "microsoft yahei";
 	height:50px;
 	background:#F2F2F2;
 	vertical-align: middle;
 	border-bottom: 1px dashed #CCC;
+	overflow: hidden;
+}
+.product-title h3{
+	font:bold 15px "microsoft yahei";
 }
 .product-desc{
 	height: 45px;
@@ -732,9 +751,10 @@ ul.slidy-menu li.slidy-link-selected a {
 	background: #FF8A00;
 }
 .product-bottom{
+	width:245px;
 	height: 10px;
 	display: block;
-	background:url('/img/box-shadow.png');
+	background:url('/img/box-shadow.png') no-repeat;
 }
 /***************shop end*********************/
 

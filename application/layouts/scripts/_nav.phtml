@@ -1,27 +1,27 @@
 <div class="nav-bar-top">
     <ul class="nav container">
-        <li class="<?=($this->currentClassName==null?'active':'')?>"><a href="/">首页</a></li>
-        <li class="<?=($this->currentClassName=='住宅家具'?'active':'')?>">
-            <a href="/jiaju.html">住宅家具</a>
+        <li class="item <?=($this->currentClassName==null?'active':'')?>"><a href="/">首页</a></li>
+        <li class="item <?=($this->currentClassName=='住宅家具'?'active':'')?>">
+            <a class="itema" href="/jiaju.html">住宅家具</a>
             <?= $this->partial('nav/_jiaju.phtml') ?>
         </li>
-         <li class="<?=($this->currentClassName=='家居饰品'?'active':'')?>">
+         <li class="item <?=($this->currentClassName=='家居饰品'?'active':'')?>">
             <a href="/shipin.html">家居饰品</a>
             <?= $this->partial('nav/_shipin.phtml') ?>
         </li>
-        <li class="<?=($this->currentClassName=='家纺布艺'?'active':'')?>">
+        <li class="item <?=($this->currentClassName=='家纺布艺'?'active':'')?>">
             <a href="/jiafang.html">家纺布艺</a>
             <?= $this->partial('nav/_jiafang.phtml') ?>
         </li>
-        <li class="<?=($this->currentClassName=='家装主材'?'active':'')?>">
+        <li class="item <?=($this->currentClassName=='家装主材'?'active':'')?>">
             <a href="/jiazhuang.html">家装主材</a>
             <?= $this->partial('nav/_jiazhuang.phtml') ?>
         </li>
-        <li class="<?=($this->currentClassName=='五金电工'?'active':'')?>">
+        <li class="item <?=($this->currentClassName=='五金电工'?'active':'')?>">
             <a href="/wujin.html">五金电工</a>
             <?= $this->partial('nav/_wujin.phtml') ?>
         </li>
-        <li class="<?=($this->currentClassName=='装修宝典'?'active':'')?>">
+        <li class="item <?=($this->currentClassName=='装修宝典'?'active':'')?>">
             <a href="/zhuangxiu.html">装修宝典</a>
         </li>
     </ul>

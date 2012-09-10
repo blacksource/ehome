@@ -72,6 +72,16 @@ $(function(){
 		$(this).addClass("selected");
 		resetProdInfo();
 	});
+	$(".sku-color-options a").click(function(){
+		$(".sku-color-options a").removeClass("selected");
+		$(this).addClass("selected");
+		resetProdInfo();
+	});
+
+	$(".pd-img-thumb li").mouseover(function(){
+		$(".pd-img-thumb li").removeClass("selected");
+		$(this).addClass("selected");
+	});
 });
 
 function resetProdInfo(){

@@ -10,7 +10,7 @@
 			<ul class="pd-img-thumb">
 				<? $index=0;  foreach ($this->itemImgs as $img) {?>
 					<li class="<?=($index++==0?'selected':'')?>">
-						<a href="#"><img width="40px" height="40px" src="<?=$img["PicSUrl"]?>"></a>
+						<a href="javascript:void(0);"><img width="40px" height="40px" src="<?=$img["PicSUrl"]?>"></a>
 					</li>
 				<?}?>
 			</ul>
@@ -25,7 +25,7 @@
 			</ul>
 			<div class="pd-sku">
 				<div class="pd-sku-options">
-					<span>颜　色：</span>
+					<span class="option-title">颜　色：</span>
 					<ul class="sku-color-options">
 						<?	$i = 0;
 						foreach ($this->item["Colors"] as $color) {?>
@@ -38,7 +38,7 @@
 					</ul>
 				</div>
 				<div class="pd-sku-options">
-					<span>规　格：</span>
+					<span class="option-title">规　格：</span>
 					<ul class="sku-spec-options">
 						<? $i = 0;
 						foreach ($this->item["Specifications"] as $spec) {?>
@@ -56,7 +56,7 @@
 						<a id="J_LinkBuy" href="#" data-addfastbuy="true" title="点击此按钮，到下一步确认购买信息。">立刻购买<b></b></a>
 					</div>
 					<div class="pd-action-basket">
-						<a href="#" id="J_LinkBasket">加入购物车<b></b></a>
+						<a href="javascript:void(0);" id="J_LinkBasket">加入购物车<b></b></a>
 					</div>
 				</div>
 				<div style="clear:both"></div>
@@ -65,7 +65,7 @@
 	</div>
 </div>
 
-<ul class="nav pd-nav clearfix">
+<ul class="nav pd-nav">
 	<li class="selected">
 		<a href="#description">商品详情</a>
 	</li>

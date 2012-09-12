@@ -246,15 +246,32 @@ img{
 	width:100%;height:34px;
 	border-bottom: 2px solid black; 
 }
-.floor-top-bg{
-	background:url(/img/title-bg.png); height:40px;width:204px;margin:-1px 0 0 -5px;
+.floor-top-bar{
+	height:40px;width:204px;margin:-1px 0 0 -5px;
 }
-.floor-title
+.floor-title-1, .floor-title-2, .floor-title-3, .floor-title-4, .floor-title-5{
+	background:url(/img/floor-title.png); 
+	height:40px;width:204px;
+	display: block;
+}
+.floor-title-2{
+	background-position: left -45px;
+}
+.floor-title-3{
+	background-position: left -90px;
+}
+.floor-title-4{
+	background-position: left -135px;
+}
+.floor-title-5{
+	background-position: left -180px;
+}
+/*.floor-title
 {
 	padding-top:0px;
 	line-height:35px;
 	color: white;
-}
+}*/
 .floor-name{
 	margin: 0px 8px;
 	color: white;

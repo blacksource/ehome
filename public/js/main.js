@@ -36,7 +36,7 @@ $(function(){
 	});
 
 
-	$('#items .item').hover(
+	$('.items .item').hover(
 		function () {
 			$(this).siblings().css({'opacity': '0.75'});	
 			$(this).css({'opacity': '1.0'}).addClass('effect');
@@ -47,7 +47,7 @@ $(function(){
 		}
 	);
 	
-	$('#items').mouseleave(function () {
+	$('.items').mouseleave(function () {
 		$(this).children().fadeTo('100', '1.0').removeClass('effect');		
 	});
 
